@@ -67,7 +67,22 @@ foreach (Employee employee in employees)
 Console.WriteLine("\n============= Total Nomina of total employees =============");
 Console.WriteLine($"Total: {payroll:C2}");
 
-//Console.WriteLine(employee1);
-//Console.WriteLine(employee2);
-//Console.WriteLine(employee3);
-//Console.WriteLine(employee4);
+
+Invoice invoice1 = new Invoice()
+{
+    Id = 0001,
+    Description = "BMW SUV M300 4V 1890 HP",
+    Price = 458899990M,
+    Quantity = 4F
+};
+Invoice invoice2 = new Invoice()
+{
+    Id = 0002,
+    Description = "CHAINS FOR MOTOSPORT TOYOTA SUV 120 PINS",
+    Price = 78950M,
+    Quantity = 15
+};
+
+Console.WriteLine("\n============= Simple Invoice =============");
+Console.WriteLine(invoice1);
+Console.WriteLine(invoice2);
